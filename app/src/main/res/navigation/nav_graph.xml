@@ -11,6 +11,8 @@
         tools:layout="@layout/fragment_registration" >
         <action
             android:id="@+id/action_registrationFragment_to_userFragment2"
+            app:popUpTo="@id/registrationFragment"
+            app:popUpToInclusive="true"
             app:destination="@id/userFragment" />
     </fragment>
     <fragment

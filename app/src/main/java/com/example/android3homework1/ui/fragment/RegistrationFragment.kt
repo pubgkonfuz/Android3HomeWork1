@@ -43,11 +43,12 @@ class RegistrationFragment : Fragment() {
                 userName = userName,
                 age = age,
                 email = email,
-                password = password
+                password = password,
             )
 
             userViewModel.saveUser(user)
             findNavController().navigate(R.id.action_registrationFragment_to_userFragment2)
+            SharedPreference.isShownOnBoard = true
         }
     }
 
